@@ -20,6 +20,13 @@ Aşağıdakileri yapın:
    İPUCU: fonksiyon oluşturmaya gerek yok
 */
 
+let surucuYasi=17;
+if(surucuYasi>18){
+console.log(true);
+}
+else{
+  console.log(false);
+}
 
 
 /*
@@ -33,6 +40,12 @@ Aşağıdakileri yapınız:
 
    İPUCU: fonksiyon oluşturmaya gerek yok
 */
+let birinciDeger=1000;
+let ikinciDegeri=30;
+if(birinciDeger>ikinciDegeri){
+  birinciDeger=20;
+  console.log(birinciDeger);
+}
 
 
 
@@ -48,7 +61,9 @@ Aşağıdakileri yapın:
 
    İPUCU: Number metoduna bakabilirsin
 */
-
+let str="1999";
+let sayi=Number(str);
+console.log(sayi);
 
 
 
@@ -61,9 +76,10 @@ Aşağıdakileri yaparak carpma isimli fonksiyonu tamamlayın:
    3. console.log(carpma(7,4)) ile yazdığınız fonsiyonu test edin. Console'da sonucu 28 olarak görmelisiniz.
 */
 
-function carpma(/*buraya kodunu yazabilirsin*/){
-  /*buraya kodunu yazabilirsin*/
+function carpma(a,b){
+  return a*b;
 }
+console.log(carpma(7,4));
 
 
 
