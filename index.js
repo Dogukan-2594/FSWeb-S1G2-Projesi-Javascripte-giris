@@ -115,16 +115,48 @@ OYUNUN KURALLARI: Makas Kağıdı yener| Kağıt Taşı yener | Taş Makas'ı ye
 
 function oyun(oyuncu, bilgisayar){
   /*buraya kodunu yazabilirsin*/
+  if(oyuncu==="Makas"&& bilgisayar==="Kağıt"){
+    return "kazandın";
+
+  }
+  else if (oyuncu==="Kağıt"&& bilgisayar==="Taş"){
+    return "kazandın";
 }
+else if(oyuncu==="taş"&& bilgisayar==="makas"){
+  return "kazandın";}
+else if(oyuncu==bilgisayar){
+    return "berabere"
+}
+else{
+  return "kaybettin"
+
+}
+}
+console.log(oyun("makas","taş"));
+
 
 // Şimdi Taş, Kağıt, Makas oyununu bilgisayara karşı oynayalım!
 /*
 Öncelikle aşağıdakileri yapın:
-1. Bilgisayarın seçimini rastgele oluşturacağımız bir fonksiyon tanımlayın. Örn: 
-   function bilgisayarinSecimi() {
-   
-   }
-2. Fonsiyonun içinde bilgisayarın seçimi için bir değişken tanımlayın
+1. Bilgisayarın seçimini rastgele oluşturacağımız bir fonksiyon tanımlayın. Örn: */
+ function bilgisayarinSecimi(){
+  let secim;
+ let sayi = Math.floor( Math.random()*3);
+ if(sayi===0){
+  secim="taş";
+ }
+ else if (sayi===1){
+  secim="kağıt"
+ }
+ else{
+  secim="makas"
+ }
+ return secim;
+ }
+ console.log("makas",bilgisayarinSecimi());
+  
+
+/*2. Fonsiyonun içinde bilgisayarın seçimi için bir değişken tanımlayın
 3. Math.random'ı kullanarak bilgisayarın seçimini oluşturun (Math.random 0-1 arasında bir değer verecek)
 4. Bu rastgele değeri "Taş", "Kağıt" veya "Makas"a dönüştüren bir koşul oluşturun
 5. Oluşan değeri geri dönün
@@ -143,9 +175,10 @@ Aşağdaki milDonusturucu fonksiyonunu aşağıdakileri kullanarak tamamlayın:
 3. Mil değerini geri dönün
 */
 
-function milDonusturucu(/*buraya kodunu yazabilirsin*/){
-  /*buraya kodunu yazabilirsin*/
+function milDonusturucu( km ){
+  return km*0,621371192;
 }
+console.log(milDonusturucu(1));
 
 
 
@@ -159,9 +192,10 @@ Aşağıdakileri feetDonusturucu fonsiyonunu kullanarak yapın:
 Google'da arama ipucu: "feet cm dönüştürme"
 */
 
-function feetDonusturucu(/*buraya kodunu yazabilirsin*/){
-  /*buraya kodunu yazabilirsin*/
+function feetDonusturucu(cm){
+  return  cm/30.48;
 }
+
 
 
 
@@ -198,8 +232,25 @@ Aşağdakileri notHesapla fonksiyonunda yapın.
  dönün
 */
 
-function notHesapla(/*buraya kodunu yazabilirsin*/){
-/*buraya kodunu yazabilirsin*/
+function notHesapla(sonuc){
+if(sonuc<=100 && sonuc>=90){
+  return "A aldın";
+
+}
+else if(sonuc>=80){
+  return "B aldın";
+}
+else if(sonuc>=70){
+  return "C aldın";
+}
+else if(sonuc>=60){
+  return "D aldın";
+}
+else{
+  return " F aldın"
+}
+
+
 }
 
 
