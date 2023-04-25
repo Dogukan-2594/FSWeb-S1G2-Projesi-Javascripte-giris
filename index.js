@@ -93,9 +93,11 @@ Aşağıdakileri yapın:
  3. Hesaplanan köpeğin yaşını dönün.
  */
 
-function kopeginYasi(/*buraya kodunu yazabilirsin*/){
-  /*buraya kodunu yazabilirsin*/
+function kopeginYasi(yas){
+  let sayi=yas*7;
+  return sayi;
 }
+console.log(kopeginYasi(5));
 
 
 
@@ -116,19 +118,19 @@ OYUNUN KURALLARI: Makas Kağıdı yener| Kağıt Taşı yener | Taş Makas'ı ye
 function oyun(oyuncu, bilgisayar){
   /*buraya kodunu yazabilirsin*/
   if(oyuncu==="Makas"&& bilgisayar==="Kağıt"){
-    return "kazandın";
+    return "Kazandın!";
 
   }
   else if (oyuncu==="Kağıt"&& bilgisayar==="Taş"){
-    return "kazandın";
+    return "Kazandın!";
 }
 else if(oyuncu==="taş"&& bilgisayar==="makas"){
-  return "kazandın";}
+  return "Kazandın!";}
 else if(oyuncu==bilgisayar){
-    return "berabere"
+    return "Beraberlik"
 }
 else{
-  return "kaybettin"
+  return "Kaybettin!"
 
 }
 }
@@ -176,7 +178,7 @@ Aşağdaki milDonusturucu fonksiyonunu aşağıdakileri kullanarak tamamlayın:
 */
 
 function milDonusturucu( km ){
-  return km*0,621371192;
+  return km*0.621371;
 }
 console.log(milDonusturucu(1));
 
@@ -247,7 +249,7 @@ else if(sonuc>=60){
   return "D aldın";
 }
 else{
-  return " F aldın"
+  return "F aldın"
 }
 
 
